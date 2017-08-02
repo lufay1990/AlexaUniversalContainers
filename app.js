@@ -35,7 +35,7 @@ app.set("view engine", "jade");
 
 alexaApp.pre = function(request, response, type) {
   if (request.sessionDetails.application.appliapplicationId != SKILL_ID) {
-    console.log('request.applicationId is: ' + request.applicationId);
+    console.log('request.applicationId is: ' + request.sessionDetails.application.appliapplicationId);
     console.log('SKILL_ID is: ' + SKILL_ID);
     // fail ungracefully
     response.fail("Invalid applicationId");
