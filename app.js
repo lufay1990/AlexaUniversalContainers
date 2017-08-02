@@ -32,7 +32,7 @@ app.set("view engine", "jade");
  * pre Handler
  * Executed before any event handlers. This is useful to setup new sessions, validate the applicationId, or do any other kind of validations.
  */
-
+/*
 alexaApp.pre = function(request, response, type) {
   if (request.sessionDetails.application.appliapplicationId != SKILL_ID) {
     console.log('request.applicationId is: ' + request.sessionDetails.application.appliapplicationId);
@@ -40,7 +40,7 @@ alexaApp.pre = function(request, response, type) {
     // fail ungracefully
     response.fail("Invalid applicationId");
   }
-}; 
+}; */ 
 
 
 /**
